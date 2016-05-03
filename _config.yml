@@ -7,7 +7,7 @@
 
 # Site settings
 title: 'QSYS, INC.'
-email: your-email@domain.com
+email: contact@quintsys.com
 description: > # this means to ignore newlines until "baseurl:"
   Web &amp; Database applications development. Online and data driven applications, secure and performant; custom made to meet your specifications.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -17,3 +17,4 @@ github_username:  quintsys
 
 # Build settings
 markdown: kramdown
+include: ['_pages']
