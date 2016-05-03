@@ -6,10 +6,8 @@ permalink: /services/
 
 
 <h3>Clean software. Applications made to go beyond your expectations.</h3>
-<article>
-<header>
-  <p>We offer a complete spectrum of software development services to make your project a reality.</p>
-</header>
+<p>We offer a complete spectrum of software development services to make your project a reality.</p>
+
 <section>
   <header>
     <h4>Design User Interfaces</h4>
@@ -58,4 +56,3 @@ permalink: /services/
     Online, by phone or in person are options that we will offer once we get closer to a deployment stage.
   </p>
 </section>
-</article>
