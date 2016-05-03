@@ -2,22 +2,20 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<article>
+  <header>
+    <h2>We Create Software Solutions To Your Business Problems.</h2>
+    <p>
+      QSys, Inc. is a software development company. We specialize in creating
+      technological solutions to complex business problems.
+    </p>
+  </header>
+  <section>
+    <p>
+      We are involved in the design, development and deployment of large scale e-commerce systems for online retailers.
+      We have been instrumental in many enterprise level applications with a strong emphasis on the research and
+      implementation of lead acquisition and distribution systems
+      for online marketing and online sales companies using call centers to reach their prospective clients.
+    </p>
+  </section>
+</article>

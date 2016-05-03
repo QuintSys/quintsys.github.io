@@ -5,7 +5,6 @@ permalink: /services/
 ---
 
 
-<h2>Services.</h2>
 <h3>Clean software. Applications made to go beyond your expectations.</h3>
 <article>
 <header>
