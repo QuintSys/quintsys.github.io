@@ -13,22 +13,34 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
+# Site settings
+title: 'QSYS, INC.'
+subtitle: '- Web & Database applications'
+email: contact@quintsys.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  Web & Database applications development. Online and data driven, secure and performant to meet your specifications.
+baseurl: "" # the sub-path of your site, e.g. /blog
+url: 'http://quintsys.com' # the base hostname & protocol for your site
+twitter_username: quintsysinc
+github_username:  quintsys
+
+twitter_url: 'https://twitter.com/QuintSysInc'
+github_url: 'https://github.com/QuintSys'
+linkedin_url: 'https://www.linkedin.com/in/erich-quintero-5516075'
+phone: '305.403.9582'
+
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
 
 # Build settings
 markdown: kramdown
-theme: minima
+sass:
+  style: compressed
+theme: forty_jekyll_theme
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+
