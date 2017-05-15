@@ -1,5 +1,7 @@
 .sass-cache
 .jekyll-metadata
+Gemfile.lock
+
 
 # Jetbrains
 .idea/
