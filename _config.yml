@@ -38,8 +38,8 @@ markdown: kramdown
 sass:
   style: compressed
 theme: forty_jekyll_theme
-gems:
-  - jekyll-feed
+#gems:
+#  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
