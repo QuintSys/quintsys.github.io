@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-- Source Control
+- devops
 tags:
 - Microsoft
 - Microsoft Visual Studio
