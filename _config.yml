@@ -37,7 +37,7 @@ tiles-count: 6
 markdown: kramdown
 sass:
   style: compressed
-theme: forty_jekyll_theme
+
 #gems:
 #  - jekyll-feed
 exclude:
