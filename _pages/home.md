@@ -1,5 +1,6 @@
 ---
 layout: home
+permalink: /
 title: QSYS, INC
 landing-title: 'QSYS, INC. - Technological solutions to complex business problems'
 description: null

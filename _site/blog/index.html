@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -19,7 +14,7 @@
 
 <body>
 
-    <!-- Wrapper -->
+<!-- Wrapper -->
 <div id="wrapper">
 
 <!-- Header -->
@@ -70,20 +65,71 @@
 		<li><a href="/#two" class="button special fit">Get Started</a></li>
 	</ul>
 </nav>
- 
-    
-    
+
+
+
 <!-- Main -->
 <div id="main" class="alt">
 
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>How to convert string to Enum in C#</h1>
-		</header>
-		
-		<p><p>This is a common task for C# programmers. You have a string value and need to convert it to the equivalent <a class="zem_slink" title="Enumerated type" href="http://en.wikipedia.org/wiki/Enumerated_type" target="_blank" rel="wikipedia">Enum</a> value. Piece o' cake: code some nifty <code>switch</code> statement or maybe a bunch of <code>if / else</code> conditions to test for every possible match, right? ... er, NO.</p>
+    <!-- One -->
+    <section id="one">
+        <div class="inner">
+            
+            <header class="major">
+                <h1>How to reset your administrator password in Teamcity 8.0</h1>
+            </header>
+            
+            <p>2013-09-13 16:47:10 -0400</p>
+            <p><p>
+<span class="image right"><img class="size-full wp-image-81 aligncenter" alt="panic" src="/assets/images/panic.jpg" width="200" height="200" /></span>Yeah, it could happen to any of us. You setup <a class="zem_slink" title="TeamCity" href="http://www.jetbrains.com/teamcity/" target="_blank" rel="homepage">TeamCity</a> 8.0 as a continuous integration server a while ago. It runs perfectly fine, it runs so fine that you never need to log on as an administrator any more. You even forget that it exists, you even forget YOUR PASSWORD! </p>
+<p>Now what? Reinstall everything? Try to hack the database? Use some cryptic java commands? What? What?</p>
+<p><span class="image left"><img class="size-thumbnail alignleft" alt="Superman" src="/assets/images/superman.jpg?w=150" width="150" height="150" /></span>
+
+    No panic needed, the nice people at <a title="JetBrains" href="http://www.jetbrains.com/" target="_blank">JetBrains </a>already thought about this. There is a Super-user token that allow you to get back to the server UI with system administrator permissions.
+</p>
+<p>Go and get the token from the <span style="color:#000000;"><strong>teamcity-server.log</strong></span> file (search for "Super user authentication token" text).</p>
+<p>After that you just need to:</p>
+<ol>
+    <li>Go to
+        <tt><code>[TeamCity server URL]/login.html?super=1</code></tt>
+    </li>
+    <li>Enter the Super-user token.</li>
+    <li>Enjoy the rest of your day</li>
+</ol>
+<p>References:</p>
+<ul>
+    <li><a title="Teamcity 8.0 - Super User" href="http://confluence.jetbrains.com/display/TCD8/Super+User" target="_blank">http://confluence.jetbrains.com/display/TCD8/Super+User</a></li>
+</ul>
+</p>
+            
+            <header class="major">
+                <h1>How to remove a project from TFS Preview</h1>
+            </header>
+            
+            <p>2013-02-04 22:28:52 -0500</p>
+            <p><p>By now you probably know that <a class="zem_slink" title="Microsoft" href="http://maps.google.com/maps?ll=47.6395972222,-122.12845&amp;spn=0.01,0.01&amp;q=47.6395972222,-122.12845 (Microsoft)&amp;t=h" target="_blank" rel="geolocation">Microsoft</a> is offering a <a href="https://tfs.visualstudio.com/en-us/" target="_blank">FREE preview of TFS online</a>. If you have a Microsoft account (previously <a class="zem_slink" title="Windows Live ID" href="http://en.wikipedia.org/wiki/Windows_Live_ID" target="_blank" rel="wikipedia">Live Id</a>), you already have a TFS account. Just sign in and start
+    <del datetime="2013-02-05T03:14:02+00:00">playing</del> using the features!</p>
+<p>So much usage will probably leave a few projects on your account that you don't need at all. Time for some cleanup.
+    <br />
+    <span style="font-size:16px;">But, how do you delete a project from your TFS Preview account????</span></p>
+<ul>
+    <li>Open a VS2012 <a class="zem_slink" title="Command Prompt" href="http://en.wikipedia.org/wiki/Command_Prompt" target="_blank" rel="wikipedia">command prompt</a> in administrator mode</li>
+    <li>Go to: 
+    	<code>%programfiles%\<a class="zem_slink" title="Microsoft Visual Studio" href="http://www.microsoft.com/visualstudio/en-us" target="_blank" rel="homepage">Microsoft Visual Studio</a> 11.0\Common7\<a class="zem_slink" title="Integrated development environment" href="http://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank" rel="wikipedia">IDE</a></code></li>
+    <li>Execute the following command (replace myproject and projectname with your own values): 
+    	<code>tfsdeleteproject/collection:"https://myproject.tfspreview.com/DefaultCollection/" projectname</code></li>
+</ul>
+<p>You might be prompted for your credentials and to confirm your request:</p>
+<p><code>Warning: Deleting a team project is an irrecoverable operation. All <a class="zem_slink" title="Revision control" href="http://en.wikipedia.org/wiki/Revision_control" target="_blank" rel="wikipedia">version control</a>, work item tracking and Team Foundation build data will be destroyed from the system. The only way to recover this data is by restoring a stored backup of the databases. Are you sure you want to delete the team project and all of its data (Y/N)?</code></p>
+<p>Just hit Y and enjoy!</p>
+</p>
+            
+            <header class="major">
+                <h1>How to convert string to Enum in C#</h1>
+            </header>
+            
+            <p>2012-11-08 10:47:50 -0500</p>
+            <p><p>This is a common task for C# programmers. You have a string value and need to convert it to the equivalent <a class="zem_slink" title="Enumerated type" href="http://en.wikipedia.org/wiki/Enumerated_type" target="_blank" rel="wikipedia">Enum</a> value. Piece o' cake: code some nifty <code>switch</code> statement or maybe a bunch of <code>if / else</code> conditions to test for every possible match, right? ... er, NO.</p>
 <p>Say you have declared an Enum like:</p>
 
 <figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">enum</span> <span class="n">FeedBackMessageType</span> <span class="p">{</span> <span class="n">None</span> <span class="p">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">Success</span><span class="p">,</span> <span class="n">Warning</span><span class="p">,</span> <span class="n">Error</span> <span class="p">}</span></code></pre></figure>
@@ -106,12 +152,22 @@
     <li><a href="http://bit.ly/UnSCy7" title="Enum.IsDefined Method">http://msdn.microsoft.com/en-us/library/system.enum.isdefined.aspx</a></li>
 </ul>
 </p>
-	</div>
-</section>
+            
+            <header class="major">
+                <h1>Customer collaboration over contract negotiation</h1>
+            </header>
+            
+            <p>2012-10-29 02:44:38 -0400</p>
+            <p><p>Some <a title="wise men" href="http://agilemanifesto.org/">wise men</a> said: Customer collaboration – requirements cannot be fully collected at the beginning of the <a title="Software development process" href="http://en.wikipedia.org/wiki/Software_development_process" target="_blank" rel="wikipedia">software development cycle</a>, therefore continuous customer or stakeholder involvement is very important.</p>
+<p><img alt="Customer collaboration over contract negotiation" src="/assets/images/software_development.jpg" height="600" width="800" /></p>
+</p>
+            
+        </div>
+    </section>
 
 </div>
 
-    <!-- Contact -->
+<!-- Contact -->
 <section id="contact">
     <div class="inner">
         <section>

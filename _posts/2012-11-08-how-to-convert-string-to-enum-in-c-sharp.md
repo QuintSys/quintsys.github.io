@@ -20,14 +20,19 @@ author: qbantek
 ---
 <p>This is a common task for C# programmers. You have a string value and need to convert it to the equivalent <a class="zem_slink" title="Enumerated type" href="http://en.wikipedia.org/wiki/Enumerated_type" target="_blank" rel="wikipedia">Enum</a> value. Piece o' cake: code some nifty <code>switch</code> statement or maybe a bunch of <code>if / else</code> conditions to test for every possible match, right? ... er, NO.</p>
 <p>Say you have declared an Enum like:</p>
-{% highlight csharp %} public enum FeedBackMessageType { None = 0, Success, Warning, Error } {% endhighlight %}
+
+{% highlight csharp %}public enum FeedBackMessageType { None = 0, Success, Warning, Error }{% endhighlight %}
+
 <p>Then you should be able to convert a string like:</p>
-{% highlight csharp %} var type = (FeedBackMessageType) Enum.Parse(typeof(FeedBackMessageType), "Success", true); {% endhighlight %}
+
+{% highlight csharp %}var type = (FeedBackMessageType) Enum.Parse(typeof(FeedBackMessageType), "Success", true);{% endhighlight %}
+
 <p>If you are trying to convert a string that doesn't match any of values from the enum, you will get a ArgumentException. How to avoid this? Try:</p>
-{% highlight csharp %} var invalidMessageType = "Info"; 
+{% highlight csharp %}var invalidMessageType = "Info"; 
 var type = Enum.IsDefined(typeof(FeedBackMessageType), invalidMessageType) 
 		? (FeedBackMessageType) Enum.Parse(typeof(FeedBackMessageType), invalidMessageType, true) 
-		: FeedBackMessageType.None; {% endhighlight %}
+		: FeedBackMessageType.None;{% endhighlight %}
+
 <p>One caveat, the <code>IsDefined</code> method has no <code>ignore case</code> parameter. According to <a title="MSDN - Enum.IsDefined Method" href="http://bit.ly/UnSCy7">MSDN</a>: <em>The characters in the string must have the same case as the enumeration member name.</em> :/</p>
 <p>References:</p>
 <ul>

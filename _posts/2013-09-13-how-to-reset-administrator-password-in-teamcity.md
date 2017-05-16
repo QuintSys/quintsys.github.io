@@ -13,8 +13,7 @@ tags:
 author: qbantek
 ---
 <p>
-<span class="image right"><img class="size-full wp-image-81 aligncenter" alt="panic" src="{{ site.baseurl }}/assets/images/panic.jpg" width="200" height="200" /></span>Y
-eah, it could happen to any of us. You setup <a class="zem_slink" title="TeamCity" href="http://www.jetbrains.com/teamcity/" target="_blank" rel="homepage">TeamCity</a> 8.0 as a continuous integration server a while ago. It runs perfectly fine, it runs so fine that you never need to log on as an administrator any more. You even forget that it exists, you even forget YOUR PASSWORD! </p>
+<span class="image right"><img class="size-full wp-image-81 aligncenter" alt="panic" src="{{ site.baseurl }}/assets/images/panic.jpg" width="200" height="200" /></span>Yeah, it could happen to any of us. You setup <a class="zem_slink" title="TeamCity" href="http://www.jetbrains.com/teamcity/" target="_blank" rel="homepage">TeamCity</a> 8.0 as a continuous integration server a while ago. It runs perfectly fine, it runs so fine that you never need to log on as an administrator any more. You even forget that it exists, you even forget YOUR PASSWORD! </p>
 <p>Now what? Reinstall everything? Try to hack the database? Use some cryptic java commands? What? What?</p>
 <p><span class="image left"><img class="size-thumbnail alignleft" alt="Superman" src="{{ site.baseurl }}/assets/images/superman.jpg?w=150" width="150" height="150" /></span>
 
